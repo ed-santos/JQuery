@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<title>Jan 31, 2019 - Vanilla JS Practice questions from https://www.w3resource.com/javascript-exercises/javascript-string-exercises.php </title>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script>
+		//Q#1
+		is_string = function(input) {
+			if (Object.prototype.toString.call(input) === '[object String]')
+				return true;
+			else
+				return false;   
+		};
+		
+		console.log(is_string('AppDev'));
+		console.log(is_string([15, 89, 4, 19]));
+		
+		//Q#2
+		isBlank = function(input) {
+			if(input.length === 0)
+				return true;
+			else
+				return false;
+		};	
+		
+		console.log(isBlank('')); 
+		console.log(isBlank('ROFL'))
+		
+		//Q#3
+		stringToArray = function (str) {
+			return str.trim().split(" ");
+		};
+		
+		console.log(stringToArray("Ed Heabert Anthony"));
+		
+		//Q#4
+		truncateString = function (str1, length) {
+  
+			if ((str1.constructor === String) && (length>0)) {
+				return str1.slice(0, length);
+			}
+		};
+		
+		console.log(truncateString("Ed Heabert Anthony",8));
+		
+		//Q#5
+		abbrev_name = function (str1) {
+			
+			var split_names = str1.trim().split(" ");
+			
+			if (split_names.length > 1) {
+				return (split_names[0] + " " + split_names[1].charAt(0) + ".");
+			}
+			
+			return split_names[0];
+			};
+
+			console.log(abbrev_name("Robin Singh"));
+		
+		
+	</script>
+	
+	
+</head>	
+
+<body>
+<h2> Q#1 to Q#25 </h2><br>
+<h4> Check Console Log for the results</h4> <br><br>
+
+
+
+
+
+</body>
