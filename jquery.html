@@ -3,13 +3,13 @@
 <html lang="en">
 
 <head>
-	<title>Jan 30, 2019 - Learing JQuery</title>
+	<title>Jan 30, 2019 - Learing JQuery JQuery Validation and Calendar DatePicker</title>
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">	</script>
 	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"> </script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+	<!--<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>-->
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
@@ -45,7 +45,6 @@
 					singleDatePicker: true,
 					showDropdowns: true,
 					minYear: 1901,
-					maxYear: parseInt(moment().format('YYYY'),10)
 				}, function(start, end, label) {
 				var years = moment().diff(start, 'years');	
 				});
